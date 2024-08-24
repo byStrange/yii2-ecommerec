@@ -1,8 +1,8 @@
 <?php
 return [
-    'components' => [
-        'db' => [
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced_test',
-        ],
+  'components' => [
+    'db' => [
+      "dsn" => "pgsql:host=localhost;port=5432;dbname=yii2-ecommerec",
     ],
+  ],
 ];

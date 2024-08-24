@@ -1,4 +1,5 @@
 <?php
+
 /**
  * User: TheCodeholic
  * Date: 12/12/2020
@@ -14,16 +15,16 @@ use yii\bootstrap4\ActiveForm;
 ?>
 
 <?php if (isset($success) && $success): ?>
-    <div class="alert alert-success">
-        Your address was successfully updated
-    </div>
+  <div class="alert alert-success">
+    Your address was successfully updated
+  </div>
 <?php endif ?>
 
 <?php $addressForm = ActiveForm::begin([
-    'action' => ['/profile/update-address'],
-    'options' => [
-        'data-pjax' => 1
-    ]
+  'action' => ['/profile/update-address'],
+  'options' => [
+    'data-pjax' => 1
+  ]
 ]); ?>
 <?= $addressForm->field($userAddress, 'address') ?>
 <?= $addressForm->field($userAddress, 'city') ?>
